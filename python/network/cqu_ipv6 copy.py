@@ -9,7 +9,7 @@ print(result.stdout)
 
 # 修改正则表达式以匹配输出格式
 match1 = re.search(r'以太网适配器 以太网:[\s\S]*?IPv6 地址[ .]*: ([0-9a-fA-F:]+)', result.stdout)
-match2 = re.search(r'无线局域网适配器 以太网:[\s\S]*?IPv6 地址[ .]*: ([0-9a-fA-F:]+)', result.stdout)
+match2 = re.search(r'无线局域网适配器 WLAN:[\s\S]*?IPv6 地址[ .]*: ([0-9a-fA-F:]+)', result.stdout)
 
 
 def f(match):
